@@ -221,6 +221,11 @@ main_warnings_table = [
     E("used-but-marked-unused").c_same(),
     E("weak-vtables").c_same(),
 
+    # New 
+    E("useless-cast").g_same(),
+    E("float-equal").g_same(),
+    E("double-promotion").c_same().g_same(),
+
     ### Objective-C
     E("arc-bridge-casts-disallowed-in-nonarc").c_same(),
     E("arc-repeated-use-of-weak").c_same(),
